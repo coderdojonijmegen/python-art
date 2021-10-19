@@ -11,6 +11,16 @@ We gaan kunst maken met Python Turtle.
 
 <!--more-->
 
+## Introductie
 
+We gebruiken voor deze instructies Thonny, een eenvoudige editor voor Python scripts.  
+Je kunt deze [hier](https://thonny.org/) downloaden en vervolgens installeren.
+
+Mocht je nog geen ervaring hebben met Thonny en Turtle, kijk dan ook eens naar onze 
+[Python Turtle](/instructies/python-turtle/) instructies.
+
+Je kunt ook kunst maken met Scratch. Kijk daarvoor naar de [Scratch Art](/instructies/scratch-art/) instructies.
+
+## 
 
 {{< licentie rel="http://creativecommons.org/licenses/by-nc-sa/4.0/">}}
