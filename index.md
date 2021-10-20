@@ -21,9 +21,21 @@ Mocht je nog geen ervaring hebben met Thonny en Turtle, kijk dan ook eens naar o
 
 Je kunt ook kunst maken met Scratch. Kijk daarvoor naar de [Scratch Art](/instructies/scratch-art/) instructies.
 
-In deze instructie behandelen kunst met lijnen, cirkels, polygonen (zoals een driehoek en vierkant) en een lissajous.
+In deze instructie behandelen we kunst met lijnen, cirkels, polygonen (zoals een driehoek en vierkant) en een lissajous.
 
 ## Lijnen
+
+We beginnen eenvoudig met het tekenen van een enkele lijn:
+
+{{< highlight python >}}
+from turtle import *
+
+forward(100)
+
+done()
+{{< /highlight >}}
+
+
 
 ## Cirkels
 
