@@ -6,12 +6,11 @@ bgcolor("black")
 speed(0)
 colormode(255)
 
-for i in range(30):
-    for j in range(30):
+for i in range(20):
+    for j in range(20):
         circle(j)
         pencolor(colors[i % len(colors)])
-        # pencolor((int(j * 256/40), (i + 40) % 256, (i + 80) % 256))
         left(j)
-        forward(i % 10 + 10)
+        forward(i + 10)
 
 done()

@@ -17,15 +17,19 @@ def vorm(x, y, rib, hoeken, rotatie=0):
     right(-rotatie)
 
 
-for i in range(int(360 / 15)):
-    vorm(0, 0, 150, 9, 15 * i)
+k = 0
+for j in range(400, 0, -60):
+    for i in range(-425, 425, 60):
+        fillcolor(colors[random.randint(0, len(colors) - 1)])
+        begin_fill()
+        vorm(i, j, 45, 5, k)
+        end_fill()
+        k += 1
 
-# for j in range(400, -400, -50):
-#     for i in range(-425, 425, 50):
-#         fillcolor(colors[random.randint(0, len(colors) - 1)])
-#         begin_fill()
-#         # vorm(random.randint(-200, 200), random.randint(-200, 200), random.randint(10, 100), 5, random.randint(0, 90))
-#         vorm(i, j, 45, 6)
-#         end_fill()
+for _ in range(100):
+    fillcolor(colors[random.randint(0, len(colors) - 1)])
+    begin_fill()
+    vorm(random.randint(-400, 400), random.randint(-400, 0), random.randint(10, 100), 7, random.randint(0, 90))
+    end_fill()
 
 done()

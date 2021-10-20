@@ -16,7 +16,7 @@ def square(x, y, s, c):
     penup()
 
 
-for i in range(10):
+for i in range(1, 7):
     for j in range(10):
         pencolor(colors[i % len(colors)])
         square(0, 0, j * 5 + 50, i * 3)

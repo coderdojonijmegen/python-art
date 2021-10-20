@@ -27,7 +27,7 @@ def shape(angle, side, limit):
 
 angle = 119
 side = 0
-limit = 1000
+limit = 800
 shape(angle, side, limit)
 
 done()
