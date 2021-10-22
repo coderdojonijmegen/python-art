@@ -253,7 +253,7 @@ Allereerst tekenen we een sinus-golf:
 
 Met deze code:
 
-{{< highlight python "linenos=table,hl_lines=8,linenostart=1" >}}
+{{< highlight python "linenos=table,hl_lines=2 8,linenostart=1" >}}
 from turtle import *
 from math import sin
 
@@ -266,6 +266,8 @@ for i in range(-400, 400):
 done()
 {{< /highlight >}}
 
+**Let op: zorg dat je regel 2 overneemt, anders wordt het `sinus` commando niet herkend.**
+
 Het commando `sin` zorgt hier voor de golfvorm. Afhankelijk van het getal dat je als parameter mee geeft, gaat de golf
 sneller of langzamer.
 
@@ -276,7 +278,7 @@ sneller of langzamer.
 
 Als we twee sinussen in één formule combineren, dan kun je een Lissajous tekenen. Kijk eens naar de volgende code:
 
-{{< highlight python "linenos=table,hl_lines=2 4-8 10-13,linenostart=1" >}}
+{{< highlight python "linenos=table,hl_lines=4-8 10-13,linenostart=1" >}}
 from turtle import *
 from math import sin
 
@@ -293,8 +295,6 @@ for i in range(1000):
 
 done()
 {{< /highlight >}}
-
-**Let op: zorg dat je regel 2 overneemt, anders wordt het `sinus` commando niet herkend.**
 
 Op regel 11 zie je de combinatie van twee sinussen in het `goto` commando. Met dit commando verschuif je de pen
 over het plaatje. Met de eerste parameter horizontaal en met de tweede verticaal. Door voor beiden een sinus te 
