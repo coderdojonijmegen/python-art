@@ -16,6 +16,10 @@ We gaan kunst maken met Python Turtle.
 We gebruiken voor deze instructies Thonny, een eenvoudige editor voor Python scripts.  
 Je kunt deze [hier](https://thonny.org/) downloaden en vervolgens installeren.
 
+In Thonny kun je op twee manieren code uitvoeren.
+1. Door de code die je hebt geschreven - je _script_ - uit te voeren in de _editor_, dit is het bovenste deel van Thonny. Uitvoeren van je script doe je door op de groene startknop te klikken of de F5-toets in te drukken. De eerste keer dat je dit doet vraagt Thonny je om het script op de computer op te slaan.
+2. In de _shell_, het onderste deel van Thonny. Hier kun je je code regel voor regel uitproberen door na het typen van een regel op Enter te drukken. Tip: regels code die je eerder in de shell hebt getypt kun je opnieuw gebruiken door pijltje omhoog te gebruiken.
+
 Mocht je nog geen ervaring hebben met Thonny en Turtle, kijk dan ook eens naar onze 
 [Python Turtle](/instructies/python-turtle/) instructies.
 
@@ -39,7 +43,7 @@ Op regel 1 wordt Turtle geladen. Deze regel is nodig om de Turtle commando's te 
 Op de 3e regel wordt met Turtle commando `forward` een lijn getrokken met lengte 100.  
 Tenslotte zorgt `done` op regel 5 er voor dat het scherm waarop getekend is, open blijft.
 
-**Opdracht 1**: Verander de lengte eens en kijk wat er gebeurd.  
+**Opdracht 1**: Verander de lengte eens en kijk wat er gebeurt.  
 **Opdracht 2**: Maak de lengte eens negatief. Waar gaat de lijn heen?
 
 ## Polygonen
@@ -47,10 +51,10 @@ Tenslotte zorgt `done` op regel 5 er voor dat het scherm waarop getekend is, ope
 Een andere naam voor een polygoon is een veelhoek. Voorbeelden van eenvoudige veelhoeken zijn een driehoek, vierkant en
 vijfhoek.
 
-### Een driehoek
+### Een driehoek tekenen
 ![driehoek](imgs/driehoek.png)
 
-Met drie lijnen kun je een driehoek tekenen. Dit kan er als volgt uit zien:
+Met drie lijnen kun je een driehoek tekenen. Dit kan er als volgt uitzien:
 
 {{< highlight python "linenos=table,hl_lines=3-8,linenostart=1" >}}
 from turtle import *
@@ -67,11 +71,11 @@ done()
 
 Het commando `right` op regels 4, 6 en 8 zorgt ervoor dat de pen naar rechts draait en wel met 120 graden.
 
-**Opdracht 3**: Voeg regels 3 tot en met 8 eens stap voor stap toe en zie wat elke stap doet.
+**Opdracht 3**: Voer regels 3 tot en met 8 eens stap voor stap uit en zie wat elke stap doet.
 
-### Herhalingen
+### Tekenen met herhalingen
 
-In het vorige voorbeeld zag je 3 keer een herhaling van een `forward` en `right` command. Dit kun je ook met een
+In het vorige voorbeeld zag je 3 keer een herhaling van een `forward` en `right` commando. Dit kun je ook met een
 herhaling beschrijven in Python:
 
 {{< highlight python "linenos=table,hl_lines=3-5,linenostart=1" >}}
@@ -84,18 +88,19 @@ for i in range(3):
 done()
 {{< /highlight >}}
 
-Op regel 3 zorgt command `for i in range(3)` ervoor dat regels 4 en 5 driemaal herhaald worden.
+Op regel 3 zorgt commando `for i in range(3)` ervoor dat regels 4 en 5 driemaal herhaald worden.
 
-**Opdracht 4**: Verander de range (het getal 3) eens naar 1, 2, 3 of 4? Wat gebeurd er?  
-**Opdracht 5**: Maak de hoek (het getal 120) eens groter of kleiner en kijk wat er gebeurd.
+**Opdracht 4**: Verander de range (het getal 3) eens naar 1, 2, 3 of 4? Wat gebeurt er?  
+**Opdracht 5**: Maak de hoek (het getal 120) eens groter of kleiner en kijk wat er gebeurt.
 
-### Functie
+### Tekenen met een functie
 
 Je hebt over herhalingen geleerd. Je kunt herhalingen nog makkelijker maken door een functie te gebruiken.  
-Een functie is een stukje code met een naam. Verder kun je wat getallen meegeven om het gedrag van de functie aan te
+Een functie is een stukje code met een naam. Door die naam kun je de functie overal in je code gebruiken.
+    Verder kun je getallen meegeven om het gedrag van de functie aan te
 passen.
 
-Hier een voorbeeld van de code:
+Hier een voorbeeld van de code voor de functie `vorm`:
 
 {{< highlight python "linenos=table,hl_lines=4-12 15-16,linenostart=1" >}}
 from turtle import *
@@ -118,23 +123,23 @@ vorm(30, 300, 80, 5, 60)
 done()
 {{< /highlight >}}
 
-Je hoeft niet te weten hoe een functie misschien werkt, maar wel hoe je het moet gebruiken.
+Je hoeft niet te weten hoe een functie precies werkt, maar wel hoe je deze moet gebruiken.
 
-Functie `vorm` heeft de volgende parameters:
-* **x**: de horizontale plek in het plaatje. 0 is in het midden. - getallen is naar links en + getallen naar rechts.
-* **y**: de vertikale plek in het plaatje. 0 is in het midden. - getallen zijn naar beneden en + getallen naar boven.
+Functie `vorm` heeft de volgende _parameters_:
+* **x**: de horizontale plek in het plaatje. 0 is in het midden. - getallen zijn naar links en + getallen naar rechts.
+* **y**: de verticale plek in het plaatje. 0 is in het midden. - getallen zijn naar beneden en + getallen naar boven.
 * **rib**: een vierkant bestaat uit vier lijnen. Deze lijnen heten ribben. Parameter `rib` is een getal groter dan 0
-    dat bepaald hoe groot een vierkant is.
-* **hoeken**: een driehoek heeft 3 hoeken (duh!). Met parameter `hoeken` kun je aangeven hoeveel hoeken je veelhoek
+    dat bepaalt hoe lang elke zijde van de veelhoek is.
+* **hoeken**: een driehoek heeft 3 hoeken (duh!). Met parameter `hoeken` kun je aangeven hoeveel hoeken de veelhoek
     moet hebben.
-* **rotatie**: normaal wordt een vierkant recht getekend, ofwel de onderste rib staat helemaal horizontaal. Met
-    parameter `rotatie` kun je het vierkant kantelen. 
+* **rotatie**: meestal wordt een vierkant recht getekend dus de bovenste en onderste rib horizontaal en de linker- en
+    rechterrib verticaal. Met de parameter `rotatie` kun je het vierkant (of andere veelhoek) kantelen. 
 
 Op regels 15 en 16 staan voorbeelden van het gebruik van de functie `vorm`. De eerste is een vierkant midden in het
 plaatje. Het tweede een gekantelde vijfhoek boven in het plaatje.
 
 **Opdracht 6**: Maak eens een achthoek met een rib van 120.  
-**Opdracht 7**: Herhaal de aanroep van de `vorm` functie eens een paar keer met iedere keer een andere vorm.
+**Opdracht 7**: Herhaal de aanroep van de `vorm` functie eens een paar keer met iedere keer andere waarden.
 
 Je kunt de polygonen ook inkleuren:
 
@@ -168,9 +173,9 @@ done()
 
 Voor het inkleuren van de figuur gaat het eigenlijk alleen maar om regels 17, 18 en 20.  
 Met `fillcolor` kies je de kleur. Na `begin_fill` wordt een volgend figuur dat getekend wordt ingekleurd. Om te voorkomen
-dat een daarop volgend figuur wordt ingekleurd, gebruik je `end_fill`.
+dat een daarop volgend figuur ook wordt ingekleurd, gebruik je `end_fill`.
 
-**Opdracht 8**: Neem de code over en voer het uit. Er zit een verrassing in! 😉
+**Opdracht 8**: Neem de code over en voer deze uit. Er zit een verrassing in! 😉
 
 ## Cirkels
 
@@ -188,7 +193,7 @@ Het getal 100 op lijn 3 staat voor de diameter van de cirkel.
 
 **Opdracht 9**: Maak de cirkel eens groter.
 
-Als je cirkels combineert met herhalingen en draaingen, dan kun je mooie figuren als deze maken:
+Als je cirkels combineert met herhalingen en rotaties, dan kun je mooie figuren als deze maken:
 
 ![cirkels](imgs/cirkels.png)
 
@@ -207,11 +212,11 @@ done()
 Door met het aantal (getal 12) en de hoek tussen de cirkels (getal 30) te spelen, kun je het figuur er anders uit 
 laten zien.
 
-**Opdracht 10**: Als je de hoek kleiner maakt, bijvoorbeeld naar 20, heb je dan genoeg cirkels om het figuur helemaal 
-    rond te maken? Welk getal moet je aanpassen om het figuur weer compleet te krijgen? Moet het groter of kleiner
+**Opdracht 10**: Als je de hoek kleiner maakt, bijvoorbeeld 20, heb je dan genoeg cirkels om het figuur helemaal 
+    rond te maken? Welk getal moet je aanpassen om het figuur weer compleet te krijgen? Moet dit groter of kleiner
     worden?
 
-Door met kleuren te spelen, wordt het figuur nog mooier:
+Door met kleuren te spelen, wordt de figuur nog mooier:
 
 {{< highlight python "linenos=table,hl_lines=3-4 7,linenostart=1" >}}
 from turtle import *
@@ -233,7 +238,7 @@ Turtle instructies](/instructies/python-turtle/#kleuren-overzicht).
 Op regel 4 maken we de achtergrond zwart. Hierdoor komen de kleuren in het lijstje beter uit.  
 Op regel 7 wordt een kleur gekozen uit het lijstje en geactiveerd.
 
-**Opdracht 11**: Neem de code over en kies eens wat andere kleuren. Je kunt ook het lijstje kort of langer maken, maar 
+**Opdracht 11**: Neem de code over en kies eens wat andere kleuren. Je kunt ook het lijstje korter of langer maken, maar 
 dan moet het getal 7 op regel 7 aangepast worden, zodat het gelijk is aan het aantal kleuren in de lijst.
 
 ## Lissajous
@@ -251,7 +256,7 @@ Allereerst tekenen we een sinus-golf:
 
 ![Sinus-golf](imgs/sinus.png)
 
-Met deze code:
+Dat doe je met deze code:
 
 {{< highlight python "linenos=table,hl_lines=2 8,linenostart=1" >}}
 from turtle import *
@@ -309,8 +314,8 @@ gebruiken, schuift de pen zowel horizontaal en verticaal.
 
 ## Tot slot
 
-Zoals je ziet kun je met Python Turtle leuke kunststukjes maken. Gebruik je fantasie, maar vooral durf te proberen met
-diverse getallen. Wie weet wat je kunt maken?
+Zoals je ziet kun je met Python Turtle leuke kunststukjes maken. Gebruik je fantasie, maar vooral: durf te proberen met
+allerlei getallen en kleuren. Wie weet wat je kunt maken?
 
 Ter voorbereiding van deze instructie hebben we zelf ook wat kunst gemaakt. Probeer ze eens uit:
  * [art-1.py](art-1.py) gekleurde lijnen  
