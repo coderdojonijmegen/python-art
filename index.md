@@ -271,7 +271,7 @@ done()
 Het commando `sin` zorgt hier voor de golfvorm. Afhankelijk van het getal dat je als parameter mee geeft, gaat de golf
 sneller of langzamer.
 
-**Opdracht 12**: Vervang getal 50 op regel 8 eens door een groter of kleiner getal. Wat gebeurt er?
+**Opdracht 12**: Vervang getal 50 op regel 8 eens door een groter of kleiner getal. Wat gebeurt er?  
 **Opdracht 13**: Vervang getal 100 op regel 8 eens door een groter of kleiner getal. Wat gebeurt er?
 
 ### Lissajous
@@ -302,10 +302,10 @@ gebruiken, schuift de pen zowel horizontaal en verticaal.
 
 ![4 - 3 lissajous](imgs/4-3-lissajous.png)
 
-**Opdracht 13**: Neem de code over en voer het uit. Zie je hetzelfde plaatje als hierboven?  
-**Opdracht 14**: Maak de waarde voor s (regel 8) eens kleiner? Wat gebeurt er? En als je het groter maakt?  
-**Opdracht 15**: Variabelen _a_ en _b_ bepalen de vorm van de Lissajous. Probeer eens andere waarden, zoals bijvoorbeeld
-    _a_ = 18 en _b_ = 19. Hoe ziet dat er uit?
+**Opdracht 14**: Neem de code over en voer het uit. Zie je hetzelfde plaatje als hierboven?  
+**Opdracht 15**: Maak de waarde voor s (regel 8) eens kleiner? Wat gebeurt er? En als je het groter maakt?  
+**Opdracht 16**: Variabelen _a_ en _b_ bepalen de vorm van de Lissajous. Probeer eens andere waarden, zoals bijvoorbeeld
+    _a_ = 18 en _b_ = 19. Hoe ziet dat er uit? En als _a_ en _b_ 4 zijn? Of 1 en 2?
 
 ## Tot slot
 
