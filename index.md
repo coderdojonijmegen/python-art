@@ -4,7 +4,7 @@ date: 2021-10-18T21:07:47+02:00
 draft: false
 toc: true
 headercolor: "teal-background"
-taal: Python
+onderwerp: Python
 ---
 
 We gaan kunst maken met Python Turtle.
